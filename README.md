@@ -13,7 +13,7 @@
 - **Resource Section Removal**: Deletes embedded resources from the binary.  
 - **Overlay Truncation**: Removes data appended to the end of the file.  
 - **.NET Detection**: Skips unsafe operations on .NET assemblies.  
-- **All-in-One Option**: Apply all available modifications with a single flag. (skips resource stripping)
+- **All-in-One Option**: Applies all available modifications with a single flag, excluding resource stripping.
 
 ---
 
