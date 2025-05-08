@@ -7,7 +7,7 @@
 ## 🚀 Features
 
 - **Debug Stripping**: Removes debug directory entries from the PE header.  
-- **Relocation Cleanup**: Removes relocation sections (x86 only).  
+- **Relocation Cleanup**: Removes relocation sections (32-bit only).  
 - **IAT Clearing**: Clears the Import Address Table directory entry.  
 - **.rdata Padding Trimming**: Reduces raw size of read-only data sections.  
 - **Resource Section Removal**: Deletes embedded resources from the binary.  
