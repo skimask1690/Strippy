@@ -13,7 +13,7 @@
 - **Resource Section Removal**: Deletes embedded resources from the binary.  
 - **Overlay Truncation**: Removes data appended to the end of the file.  
 - **.NET Detection**: Skips unsafe operations on .NET assemblies.  
-- **All-in-One Option**: Applies all available modifications with a single flag, excluding resource stripping.
+- **All-in-One Option**: Applies all safe modifications with a single flag.
 
 ---
 
@@ -29,7 +29,7 @@
    - The tool loads the PE file, applies modifications, and writes the cleaned version to disk.
 
 4. **Optional: Use `--all`**  
-   - Use `-a` or `--all` to apply all stripping operations automatically.
+   - Use `-a` or `--all` to apply all safe stripping operations automatically.
 
 ---
 
