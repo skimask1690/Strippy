@@ -15,7 +15,7 @@ def main():
     parser.add_argument("-O", "--overlay", action="store_true", help="Truncate overlay data")
     parser.add_argument("-R", "--rdata", action="store_true", help="Trim raw size to virtual size in read-only data sections")
     parser.add_argument("-r", "--rsrc", action="store_true", help="Remove resource section")
-    parser.add_argument("-a", "--all", action="store_true", help="Apply all modifications excluding resource stripping")
+    parser.add_argument("-a", "--all", action="store_true", help="Apply all safe modifications")
     parser.add_argument("-o", "--output", required=True, help="Path for the output file")
     args = parser.parse_args()
 
@@ -25,7 +25,7 @@ def main():
 
     if args.all:
         # Apply all cleanup flags if `--all` is specified.
-        args.debug = args.reloc = args.iat = args.overlay = args.rdata = args.rsrc = True
+        args.debug = args.iat = args.overlay = args.rdata = args.rsrc = True
 
     process_pe(args.pe_file, args)
 
